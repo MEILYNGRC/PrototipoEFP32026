@@ -55,6 +55,7 @@ public class MdiPlanillas extends javax.swing.JFrame {
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
+        jMenuItem5 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         frmMantenimientoPerfiles8 = new javax.swing.JMenuItem();
         frmMantenimientoPerfiles10 = new javax.swing.JMenuItem();
@@ -144,6 +145,14 @@ public class MdiPlanillas extends javax.swing.JFrame {
             }
         });
         jMenu2.add(jMenuItem3);
+
+        jMenuItem5.setText("CARRERAS");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem5);
 
         jMenuBar1.add(jMenu2);
 
@@ -422,6 +431,12 @@ public class MdiPlanillas extends javax.swing.JFrame {
         vista.setVisible(true);
     }//GEN-LAST:event_jCheckBoxMenuItem1ActionPerformed
 
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        // TODO add your handling code here:
+        Carrera vista = new Carrera();
+        vista.setVisible(true);       
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -484,6 +499,7 @@ public class MdiPlanillas extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem manDepartamento;
     private javax.swing.JMenuItem salirPlanillas;
     // End of variables declaration//GEN-END:variables
