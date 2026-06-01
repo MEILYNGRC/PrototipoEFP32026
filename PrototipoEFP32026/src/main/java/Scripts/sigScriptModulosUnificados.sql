@@ -13,9 +13,6 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET FOREIGN_KEY_CHECKS = 0; 
 SET time_zone = "+00:00";
 
--- ============================================================
--- BLOQUE 1: CATÁLOGOS (sin dependencias)
--- ============================================================
 
 --============================================================
 --EXAMEN
@@ -27,8 +24,11 @@ CREATE TABLE IF NOT EXISTS `carreras` (
   `estatus_carrera` VARCHAR(1),
   PRIMARY KEY (`codigo_carrera`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+-- CARRERAS
 
-
+-- ============================================================
+-- BLOQUE 1: CATÁLOGOS (sin dependencias)
+-- ============================================================
 CREATE TABLE IF NOT EXISTS `CattipoCuenta` (
   `TCidcuenta`   INT         NOT NULL AUTO_INCREMENT,
   `TCnombretipo` VARCHAR(50) NOT NULL UNIQUE,
